@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="font-sans text-gray-800">
+    // Add overflow-x-hidden here to prevent horizontal scroll on mobile
+    <div className="font-sans text-gray-800 overflow-x-hidden">
       {/* Hero Section with Background Image */}
       <section
         className="bg-cover bg-center bg-no-repeat text-white py-28 px-6 text-center"
@@ -12,7 +13,7 @@ const Home = () => {
             "url('https://images.unsplash.com/photo-1605478522014-9fc6f3b9b0d5?auto=format&fit=crop&w=1470&q=80')",
         }}
       >
-        <div className="bg-black bg-opacity-60 p-8 rounded-lg inline-block">
+        <div className="bg-black bg-opacity-60 p-8 rounded-lg inline-block max-w-full">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Welcome to Konge Parents Primary School
           </h1>
